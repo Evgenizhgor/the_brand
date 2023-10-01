@@ -1,6 +1,9 @@
-$colorContent: #f16d7f;
-$colorBack: #f8f3f4;
-
+@import "vars";
+@import "mixins";
+* {
+  margin: 0;
+  padding: 0;
+}
 .carousel {
   display: flex;
   justify-content: center;
@@ -12,37 +15,12 @@ $colorBack: #f8f3f4;
 .slide {
   width: 100%;
 }
-* {
-  margin: 0;
-  padding: 0;
-}
+
 .arrow_left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(42, 42, 42, 0.15);
-  width: 47px;
-  height: 47px;
-  fill: #000000;
-  padding: 8px;
-  :hover {
-    background-color: #222;
-    fill: $colorContent !important;
-  }
+  @include arrow();
 }
 .arrow_right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(42, 42, 42, 0.15);
-  width: 47px;
-  height: 47px;
-  fill: #000000;
-  padding: 8px;
-  :hover {
-    background-color: #222;
-    fill: $colorContent !important;
-  }
+  @include arrow();
 }
 
 summary {
@@ -66,8 +44,8 @@ a {
 }
 
 .center {
-  padding-left: calc(50% - 570px);
-  padding-right: calc(50% - 570px);
+  padding-left: calc(50% - $widthSite/2);
+  padding-right: calc(50% - $widthSite/2);
 }
 .header {
   background-color: #222222;

@@ -1,0 +1,14 @@
+@mixin arrow() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(42, 42, 42, 0.15);
+  width: 47px;
+  height: 47px;
+  fill: #000000;
+  padding: 8px;
+  :hover {
+    background-color: #222;
+    fill: $colorContent !important;
+  }
+}
