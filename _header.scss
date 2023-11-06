@@ -1,0 +1,82 @@
+.header {
+  background-color: #222222;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &_left {
+    display: flex;
+
+    align-items: flex-end;
+    gap: 30px;
+  }
+  &_right {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  &__checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+  &_icons {
+    cursor: pointer;
+  }
+}
+//   BURGER MENU
+.dropdown {
+  background: #ffffff;
+  width: 232px;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding: 32px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  top: 75px;
+  transition: right 0.5s;
+  z-index: 5;
+  &__title {
+    color: $colorContent;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 12px;
+  }
+}
+#burger {
+  position: absolute;
+  left: -77777777899px;
+  visibility: hidden;
+
+  &:checked ~ .dropdown {
+    right: -$widthBurgerMenu;
+  }
+}
+.category__name {
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: $colorContent;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.category__list {
+  list-style-type: none;
+  margin-left: 20px;
+  padding-left: 0 !important;
+  &_item {
+    color: #6f6e6e !important;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 11px;
+  }
+}

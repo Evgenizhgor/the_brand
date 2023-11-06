@@ -1,0 +1,237 @@
+.prodNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 148px;
+  background: $colorBack;
+  &_title {
+    font-family: "Lato";
+    color: $colorContent;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  &_breadcrumbs_list {
+    display: flex;
+    list-style-type: none;
+    &_link {
+      font-family: Lato;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      &:not(:first-of-type)::before {
+        padding: 0 5px;
+        color: #ccc;
+        content: "/ ";
+      }
+    }
+  }
+  &_active__link {
+    text-decoration: none;
+    color: #636363;
+    &:active {
+      color: $colorBack;
+      font-family: Lato;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+  &_active__link:hover {
+    color: $colorContent;
+  }
+}
+.mainCatalog {
+  padding-bottom: 38px;
+}
+
+.select {
+  height: 132px;
+  position: relative;
+  display: flex;
+  padding-top: 39px;
+  box-sizing: border-box;
+  gap: 30px;
+}
+
+//====================       catalog  dropdown lists  styles:
+.filter {
+  box-sizing: border-box;
+  padding-top: 13px;
+  width: 360px;
+  position: relative;
+  z-index: 8;
+
+  &[open] {
+    background: #ffffff;
+    box-shadow: 2px 18px 35px rgba(0, 0, 0, 0.21);
+  }
+  &[open] .filter_head {
+    color: $colorContent;
+  }
+
+  &[open] path {
+    fill: $colorContent;
+  }
+
+  &_summary {
+    display: flex;
+
+    gap: 11px;
+  }
+  &_head {
+    color: $colorTxt;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  &_content {
+    background-color: #ffffff;
+    padding: 0 16px 16px 16px;
+  }
+  &_item {
+    margin-top: 16px;
+    &[open] .filter_heading {
+      color: $colorContent;
+    }
+  }
+  &_heading {
+    color: #6f6e6e;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 11px 11px 11px;
+    border-left: $colorText solid 5px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  &_link {
+    color: #6f6e6e;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    &:hover {
+      color: $colorText;
+    }
+  }
+  &_link-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px 16px;
+  }
+  &_bigger {
+    display: none;
+  }
+}
+.sorting {
+  display: flex;
+  padding-top: 12px;
+  gap: 27px;
+  &_details {
+    position: relative;
+  }
+
+  &_summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &_head {
+    color: #6f6e6e;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &_box {
+    background: #fff;
+    box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+    padding: 9px 30px 11px 9px;
+    position: absolute;
+    z-index: 5;
+    left: -7px;
+    top: 22px;
+  }
+  &_check {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    color: #6f6e6e;
+    font-family: Roboto;
+    font-size: 14px;
+    padding-bottom: 6px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &_size {
+    gap: 9px;
+  }
+}
+.pag {
+  display: flex;
+  justify-content: center;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: #ebebeb solid 1px;
+  width: 283px;
+  height: 44px;
+  box-sizing: border-box;
+  align-self: center;
+  margin-bottom: 96px;
+  margin-top: 48px;
+  border-radius: 4px;
+  padding: 0 16px 0 16px;
+  &__number {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+  }
+}
+.pagination__arr {
+  list-style-type: none;
+  fill: #222222;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.page {
+  text-decoration: none;
+  color: #c4c4c4;
+  line-height: 19.2px;
+  font-size: 16px;
+  font-family: "Lato";
+  &:hover {
+    color: $colorText;
+  }
+}
+
+@media (max-width: 1023px) {
+  /* .hiden {
+    display: none;
+  }*/
+  .select {
+    display: flex;
+    justify-content: space-between;
+  }
+  .prodNav_breadcrumbs {
+    margin-right: 16px;
+  }
+}
+@media (max-width: 767.9px) {
+  .filter[open] {
+    position: absolute;
+    width: 100%;
+  }
+}

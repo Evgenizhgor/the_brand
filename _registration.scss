@@ -1,0 +1,187 @@
+.registration {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+.reg {
+  display: flex;
+  flex-direction: column;
+  &__name {
+    padding-bottom: 20px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+  }
+  &__field {
+    width: 360px;
+    height: 46px;
+    border: 1px solid #a4a4a4;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #b1b1b1;
+    padding-left: 17px;
+    box-sizing: border-box;
+    &:not(:last-of-type) {
+      margin-bottom: 21px;
+    }
+  }
+  &__description {
+    font-family: Lato;
+
+    padding-top: 15px;
+    padding-bottom: 39px;
+    width: 360px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #b1b1b1;
+  }
+}
+.loyals {
+  width: 652px;
+  &__title {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 22px;
+    color: #000000;
+  }
+  &__txt {
+    font-family: "Lato";
+    font-weight: 300;
+    font-size: 24px;
+    line-height: normal;
+    padding-bottom: 21px;
+  }
+  &__discounts {
+    display: flex;
+    &-description {
+      display: flex;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      padding-bottom: 16px;
+      color: #000000;
+      font-family: Lato;
+      padding-left: 23px;
+    }
+  }
+}
+
+.gender {
+  display: flex;
+  border: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  margin-bottom: 23px;
+  margin-top: 10px;
+  color: #000;
+  gap: 20px;
+  &__radio {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    color: #000;
+    font-family: Lato;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    align-items: center;
+  }
+  &__choose {
+    margin-right: 10px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    & + label::before {
+      width: 17px;
+      height: 17px;
+      content: "";
+      border: 1px solid $colorBack;
+      border-radius: 50%;
+      margin-right: 10px;
+      background-repeat: no-repeat;
+      vertical-align: middle;
+      cursor: pointer;
+      z-index: 1;
+    }
+    & + label::after {
+      border: 2px solid $colorContent;
+      width: 15px;
+      height: 15px;
+      z-index: 1;
+    }
+  }
+}
+
+.regName_submit {
+  width: 167px;
+  height: 50px;
+  color: #4a4a4a;
+  background: $colorBack;
+  border: 1px solid #4a4a4a;
+  fill: #4a4a4a;
+  &:hover {
+    fill: $colorBack;
+    box-shadow: 0.5px 1px 3px 1px $colorButHover;
+  }
+  &-join {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  html {
+    font-size: 16px;
+  }
+  .loyals__title /*.loyals__txt .loyals__discounts-description*/ {
+    font-size: 1rem;
+  }
+  .reg {
+    margin-left: 16px;
+  }
+
+  .loyals__txt {
+    font-size: 1rem;
+    width: 354px;
+  }
+  .loyals__discounts-description {
+    font-size: 1rem;
+  }
+  .prodNav_title {
+    margin-left: 16px;
+  }
+  .registration {
+    gap: 22px;
+  }
+}
+@media (max-width: 767.9px) {
+  .registration {
+    flex-direction: column;
+  }
+  .reg {
+    margin-left: 0;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .loyals__discounts {
+    width: 314px;
+  }
+  .loyals__discounts-description {
+    width: 358px;
+  }
+}

@@ -1,0 +1,74 @@
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 30px;
+  &_card {
+    position: relative;
+    background-color: #f8f8f8;
+    font-family: "Lato";
+  }
+}
+.items_card:hover {
+  transform: scale(1.02);
+}
+.items_card:hover .card_img {
+  filter: brightness(40%);
+}
+.items_card:hover .item_add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.txt {
+  padding: 24px 16px;
+  background-color: #f8f8f8;
+}
+
+.capsule {
+  color: #000;
+  font-family: Lato;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.description {
+  width: 314.7px;
+  color: #5d5d5d;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.price {
+  color: $colorContent;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.item_add {
+  display: none;
+  position: absolute;
+  top: 188px;
+  left: 111px;
+  border: 1px solid #fff;
+  width: 139px;
+  height: 44px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.item_add:hover {
+  box-shadow: 0 0 17px #fff;
+  color: #fff;
+}
+.item_add::before {
+  padding-right: 11px;
+  content: url(img/shopper.svg);
+}

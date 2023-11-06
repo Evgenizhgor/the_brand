@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>registration</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -82,186 +86,153 @@
           /></a>
         </div>
       </div>
-      <section class="promo center">
-        <img class="main_photo" src="photo/promo_guy.png" alt="promo" />
-        <div class="main_text">
-          <img
-            class="pink_rectangle"
-            src="img/rectangle16_copy.svg"
-            alt="rectangle"
-          />
-          <div class="noStick">
-            <h1 class="noStick__main">THE BRAND</h1>
-            <p class="noStick__submain">
-              OF LUXERIOUS <span class="noStick__submain_fashion">FASHION</span>
-            </p>
-          </div>
-        </div>
+      <section class="prodNav center">
+        <h1 class="prodNav_title">REGISTRATION</h1>
       </section>
-      <section class="sales center">
-        <div class="saleItem">
-          <img class="saleItem__img" src="photo/for_woomen.png" alt="woman" />
-          <div class="saleItem__text">
-            <p class="saleItem__p">30% OFF</p>
-            <h3 class="saleItem__for">FOR WOMEN</h3>
-          </div>
-        </div>
-        <div class="saleItem">
-          <img class="saleItem__img" src="photo/forman.jpg" alt="man" />
-          <div class="saleItem__text">
-            <p class="saleItem__p">HOT DEAL</p>
-            <h3 class="saleItem__for">FOR MEN</h3>
-          </div>
-        </div>
-        <div class="saleItem">
-          <img class="saleItem__img" src="photo/for_kids.jpg" alt="kid" />
-          <div class="saleItem__text">
-            <p class="saleItem__p">NEW ARRIVALS</p>
-            <h3 class="saleItem__for">FOR KIDS</h3>
-          </div>
-        </div>
-
-        <div class="saleItem accessorises">
-          <img
-            class="saleItem__img access"
-            src="photo/accessorises.jpg"
-            alt="accessorise"
+      <section class="registration center">
+        <form action="#" class="reg">
+          <p class="reg__name">Your Name</p>
+          <input
+            class="reg__field"
+            type="text"
+            placeholder="First Name"
+            required
           />
-          <div class="saleItem__text">
-            <p class="saleItem__p">LUXIROUS & TRENDY</p>
-            <h3 class="saleItem__for">ACCESORIES</h3>
-          </div>
-        </div>
-      </section>
-      <section class="catalog center">
-        <div class="catalog_title">
-          <h3 class="featured">Featured Items</h3>
-          <p class="featured_text">
-            Shop for items based on what we featured in this week
+          <input
+            class="reg__field"
+            type="text"
+            placeholder="Last Name"
+            required
+          />
+          <fieldset class="gender">
+            <input type="radio" class="gender__choose" value="Male" />
+            <label for="Male" class="gender__radio">Male</label>
+            <input type="radio" class="gender__choose" value="Female" />
+            <label for="Female" class="gender__radio">Female</label>
+          </fieldset>
+          <p class="reg__name">Login details</p>
+          <input class="reg__field" type="email" placeholder="Email" required />
+          <input
+            class="reg__field"
+            type="password"
+            placeholder="Password"
+            required
+          />
+          <p class="reg__description">
+            Please use 8 or more characters, with at least 1 number and a
+            mixture of uppercase and lowercase letters
           </p>
-        </div>
-        <div class="items">
-          <div class="items_card">
-            <a href="#">
-              <img class="card_img" src="photo/card1.jpg" alt="lot"
-            /></a>
-            <div class="txt">
-              <p class="capsule">ELLERY X M'O CAPSULE</p>
-              <p class="description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <p class="price">$52.00</p>
-            </div>
-            <a href="#" class="item_add">Add to Cart</a>
+          <button class="regName_submit" type="submit">
+            <span class="regName_submit-join">JOIN NOW</span
+            ><svg
+              width="17"
+              height="10"
+              viewBox="0 0 17 10"
+              class="gull"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"
+              />
+            </svg>
+          </button>
+        </form>
+        <div class="loyals">
+          <h2 class="loyals__title">LOYALTY HAS ITS PERKS</h2>
+          <p class="loyals__txt">
+            Get in on the loyalty program where you can earn points and unlock
+            serious perks. Starting with these as soon as you join:
+          </p>
+          <div class="loyals__discounts">
+            <svg
+              width="20"
+              height="16"
+              viewBox="0 0 20 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
+                fill="black"
+              />
+            </svg>
+            <p class="loyals__discounts-description">15% off welcome offer</p>
           </div>
-          <div class="items_card">
-            <a href="#"
-              ><img class="card_img" src="photo/card2.png" alt="lot"
-            /></a>
-            <div class="txt">
-              <p class="capsule">ELLERY X M'O CAPSULE</p>
-              <p class="description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <p class="price">$52.00</p>
-            </div>
-            <a href="#" class="item_add">Add to Cart</a>
-          </div>
-          <div class="items_card">
-            <a href="#">
-              <img class="card_img" src="photo/card3.png" alt="lot"
-            /></a>
-            <div class="txt">
-              <p class="capsule">ELLERY X M'O CAPSULE</p>
-              <p class="description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <p class="price">$52.00</p>
-            </div>
-            <a href="#" class="item_add">Add to Cart</a>
-          </div>
-          <div class="items_card">
-            <a href="#"
-              ><img class="card_img" src="photo/card4.png" alt="lot"
-            /></a>
-            <div class="txt">
-              <p class="capsule">ELLERY X M'O CAPSULE</p>
-              <p class="description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <p class="price">$52.00</p>
-            </div>
-            <a href="#" class="item_add">Add to Cart</a>
-          </div>
-          <div class="items_card">
-            <a href="#">
-              <img class="card_img" src="photo/card5.png" alt="lot"
-            /></a>
-            <div class="txt">
-              <p class="capsule">ELLERY X M'O CAPSULE</p>
-              <p class="description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <p class="price">$52.00</p>
-            </div>
-            <a href="#" class="item_add">Add to Cart</a>
-          </div>
-          <div class="items_card">
-            <a href="#">
-              <img class="card_img" src="photo/card6.png" alt="numsix"
-            /></a>
-            <div class="txt">
-              <p class="capsule">ELLERY X M'O CAPSULE</p>
-              <p class="description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <p class="price">$52.00</p>
-            </div>
-            <a href="#" class="item_add">Add to Cart</a>
-          </div>
-        </div>
-        <div class="browse">
-          <a class="browse_button" href="product.html"> Browse All Product</a>
-        </div>
-      </section>
-      <section class="additional center">
-        <div class="additional_art">
-          <article class="add_theme delivery">
-            <img class="add_icons" src="img/del.svg" alt="car" />
-            <p class="add_header">Free Delivery</p>
-            <p class="add_txt">
-              Worldwide delivery on all. Authorit tively morph next-generation
-              innov tion with extensive models.
+          <div class="loyals__discounts">
+            <svg
+              width="20"
+              height="16"
+              viewBox="0 0 20 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
+                fill="black"
+              />
+            </svg>
+            <p class="loyals__discounts-description">
+              Free shipping, returns and exchanges on all orders
             </p>
-          </article>
-          <article class="add_theme">
-            <img class="add_icons" src="img/procent.svg" alt="procent" />
-            <p class="add_header">Sales & discounts</p>
-            <p class="add_txt">
-              Worldwide delivery on all. Authorit tively morph next-generation
-              innov tion with extensive models.
+          </div>
+          <div class="loyals__discounts">
+            <svg
+              width="20"
+              height="16"
+              viewBox="0 0 20 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
+                fill="black"
+              />
+            </svg>
+            <p class="loyals__discounts-description">
+              $10 off a purchase on your birthday
             </p>
-          </article>
-          <article class="add_theme crown">
-            <img class="add_icons" src="img/crown.svg" alt="crown" />
-            <p class="add_header">Quality assurance</p>
-            <p class="add_txt">
-              Worldwide delivery on all. Authorit tively morph next-generation
-              innov tion with extensive models.
+          </div>
+          <div class="loyals__discounts">
+            <svg
+              width="20"
+              height="16"
+              viewBox="0 0 20 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
+                fill="black"
+              />
+            </svg>
+            <p class="loyals__discounts-description">
+              Early access to products
             </p>
-          </article>
+          </div>
+          <div class="loyals__discounts">
+            <svg
+              width="20"
+              height="16"
+              viewBox="0 0 20 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z"
+                fill="black"
+              />
+            </svg>
+            <p class="loyals__discounts-description">
+              Exclusive offers & rewards
+            </p>
+          </div>
         </div>
       </section>
       <section class="subscribe center">
